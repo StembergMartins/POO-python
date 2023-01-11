@@ -1,4 +1,6 @@
 class Pessoa:
+    ano_atual = 2023
+
     def __init__(self, nome, idade, comendo=False, falando=False):
         self.nome = nome
         self.idade = idade
@@ -45,6 +47,9 @@ class Pessoa:
 
         self.falando = False
         print(f"{self.nome} parou de falar!")
+
+    def ano_nascimento(self):
+        return print(self.ano_atual - self.idade)
 
 
 
