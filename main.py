@@ -11,4 +11,3 @@ c1.remover_tampa()
 c1.remover_tampa()
 c1.escrever("olá mundo em POO!")
 
-p1.ano_nascimento()
