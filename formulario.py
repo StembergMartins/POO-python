@@ -3,9 +3,9 @@ class Caneta:
     def __init__(self, modelo, cor, ponta = float, carga = int, tampa = bool):
         self.modelo = modelo
         self.cor = cor
-        self.ponta = ponta
-        self.carga = carga
-        self.tampa = tampa
+        self._ponta = ponta
+        self.__carga = carga
+        self.__tampa = tampa
 
     def escrever(self, frase):
         if self.tampa:
@@ -13,9 +13,14 @@ class Caneta:
             return
         print(f"A caneta de modelo {self.modelo} escreveu em {self.cor} a frase: {frase}")
 
-    def remover_tampa(self):
-        if not self.tampa:
-            print("A caneta já está sem tampa!!! ")
-            return
-        self.tampa = False
-        print("A tampa da caneta foi removida")
+    def rabiscar(self):
+        None
+
+    def pintar(self):
+        None
+    
+    def _tampar(self):
+        None
+    
+    def _destampar(self):
+        None
