@@ -9,4 +9,4 @@ c1 = Caneta("Bic", "Azul", 0.5, 80, 1)
 c1.escrever("olá mundo em POO!")
 
 
-print(vars(c1))
+
